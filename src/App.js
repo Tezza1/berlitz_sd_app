@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import NavBar from './components/app_bar';
-import FooterBar from './components/footer_bar';
+// import FooterBar from './components/footer_bar';
 import {Route} from 'react-router-dom';
 import Home from './home/home';
 import Portfolio from './portfolio/portfolio';
@@ -73,7 +73,7 @@ class App extends Component {
                 <Route path= "/settings" render = {({history}) => (
                     <Settings />
                 )}/>
-                <FooterBar />
+                {/*<FooterBar />*/}
             </div>
         );
     }
