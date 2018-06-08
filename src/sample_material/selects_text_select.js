@@ -79,7 +79,7 @@ class VideoSelect extends React.Component {
       img: require('../images/be_lvl1.png'),
       title: 'Level 1 completion',
       type: 'Teaching method',
-      videoId: 'TBA',
+      videoId: 'ltM-BlJrVN4',
       key: 'Level 1 method 1'
     },
     {
@@ -87,7 +87,7 @@ class VideoSelect extends React.Component {
       img: require('../images/be_lvl2a.png'),
       title: 'Level 2 completion',
       type: 'Teaching method',
-      videoId: 'TBA',
+      videoId: '7hb9PC48BRk',
       key: 'Level 2 method 1'
     },
     {
@@ -95,7 +95,7 @@ class VideoSelect extends React.Component {
       img: require('../images/be_lvl4.png'),
       title: 'Level 4 completion',
       type: 'Teaching methon',
-      videoId: 'TBA',
+      videoId: 'QbgwmB19SNo',
       key: 'Level 4 method 1'
     },
     {
@@ -103,7 +103,7 @@ class VideoSelect extends React.Component {
       img: require('../images/be_lvl6.png'),
       title: 'Level 6 completion',
       type: 'Teaching method',
-      videoId: 'TBA',
+      videoId: 'KHMORxuOeAU',
       key: 'Level 6 method 1'
     }
   ];

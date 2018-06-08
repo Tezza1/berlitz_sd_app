@@ -5,9 +5,14 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 /* MODULES TO ADD TO PAGE */
 import SampleVideos from './sample_video';
 import RadioSelectVideo from './radio_select_video';
+import RadioSelectText from './radio_select_text';
+import TextLightbox from './sample_text';
+import SelectText from './selects_text_select';
+import TextProgress from './text_progress';
 
 /* TO STYLE TABS & MAKE TABS WORKS */
 function TabContainer(props) {
@@ -65,7 +70,7 @@ class SampleTabs extends React.Component {
             indicatorColor="primary"
             centered
           >
-            <Tab label="Videos" />
+            <Tab label="Video" />
             <Tab label="Text" />
           </Tabs>
         </AppBar>
@@ -73,7 +78,18 @@ class SampleTabs extends React.Component {
           <RadioSelectVideo handlerFromParent={this.handleData}/>
           <SampleVideos data={this.state.data}/>
         </TabContainer>}
-        {value === 1 && <TabContainer>Text</TabContainer>}
+        {value === 1 && <TabContainer>
+          <TextProgress />
+          <Grid container spacing={24}>
+            <Grid item xs={12} sm={6}>
+                <RadioSelectText handlerFromParent={this.handleData}/>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+                <SelectText />
+            </Grid>
+          </Grid>
+          <TextLightbox />
+        </TabContainer>}
       </div>
     );
   }

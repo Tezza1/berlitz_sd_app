@@ -15,6 +15,7 @@ import Button from '@material-ui/core/Button';
 const styles = theme => ({
   card: {
     maxWidth: 400,
+    paddingBottom: '2em',
     margin: '1em auto 2em auto'
   },
   media: {
@@ -66,7 +67,7 @@ class SampleVideos extends React.Component {
               </Avatar>
             }
             title={tile.title}
-            subheader={tile.type}
+            subheader="Video"
           />
           <CardMedia
             className={classes.media}
@@ -75,15 +76,15 @@ class SampleVideos extends React.Component {
           />
           <CardContent value={"Terry"}>
             <Typography component="p">
-              {tile.description}
+              Description of video category to be viewed and what to watch for in the video to get the most from the video and leave the biggest impact with the client.
             </Typography>
             <Button color="primary" className={classes.button} onClick={(e)=>{this.openModal(e.target.id)}}>
               <div id={tile.videoId}>Play video</div>
             </Button>
           </CardContent>
+          {/*<ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.vidId} onClose={() => this.setState({isOpen: false})} />*/}
         </Card>
-      ))}
-        <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.vidId} onClose={() => this.setState({isOpen: false})} />
+          ))}
       </div>
     );
   }

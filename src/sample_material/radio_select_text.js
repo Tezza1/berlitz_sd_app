@@ -153,8 +153,8 @@ class RadioButtonsGroup extends React.Component {
     return (
       <div className={classes.root}>
         <FormControl component="fieldset" required className={classes.formControl}>
-          <FormLabel component="legend">Sample Videos</FormLabel>
-          <FormHelperText>Select videos to be displayed</FormHelperText>
+          <FormLabel component="legend">Sample Text</FormLabel>
+          <FormHelperText>Select text to be displayed</FormHelperText>
           <RadioGroup
             aria-label="gender"
             name="gender1"
@@ -162,10 +162,11 @@ class RadioButtonsGroup extends React.Component {
             value={this.state.value}
             onChange={this.handleChange}
           >
-            <FormControlLabel value="lvlBeCompleteData" control={<Radio />} label="Interview & Progress" />
-            <FormControlLabel value="beMethodData" control={<Radio />} label="Berlitz Teaching Method" />
-            <FormControlLabel value="bbcsData" control={<Radio />} label="Communication Skills" />
-            <FormControlLabel value="toeicData" control={<Radio />} label="TOEIC" />
+            <FormControlLabel value="berlitz_english" control={<Radio />} label="Berlitz English" />
+            <FormControlLabel value="berlitz_ol" control={<Radio />} label="Berlitz Other Languages" />
+            <FormControlLabel value="btg" control={<Radio />} label="Berlitz Talent Growth" />
+            <FormControlLabel value="toeic" control={<Radio />} label="TOEIC" />
+            <FormControlLabel value="biz_jap" control={<Radio />} label="Millenium Partners" />
           </RadioGroup>
         </FormControl>
       </div>
